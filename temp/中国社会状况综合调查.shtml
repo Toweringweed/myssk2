@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><TRS_CHANNEL id="OWNER"  field="CHNLDESC"     autolink="FALSE"     ></TRS_CHANNEL>-中国社会学网</title>
+<link rel="stylesheet" type="text/css" href="../site92/layout.css" />
+<link rel="stylesheet" type="text/css" href="../site92/box.css" />
+<link rel="stylesheet" type="text/css" href="../site92/nav.css" />
+<link type="text/css" rel="stylesheet" href="../site92/cssn_head.css" />
+<script type="text/javascript" src="../site92/js_1.js"></script>
+<script type="text/javascript" src="../site92/js_2.js"></script>
+<script type="text/javascript" src="../site92/js_3.js"></script>
+<meta http-equiv=refresh content="5;url=http://www.sociology2010.cass.cn/cate/30.htm">
+<style type="text/css">
+<!--
+
+
+.book_title{font-size:14px; color: #009; font-weight:bold}
+.book_title a{font-size:14px; color: #009; font-weight:bold}
+.book_img img{padding:2px; border:1px solid #666;}
+
+-->
+#middle{width:970px;}
+#main{width:970px;}
+.sub_right_con{width:970px;text-align: center;}
+#news_content{padding-top: 15%;font-size:30px;}
+</style>
+<TRS_TEMPLATE TEMPNAME="嵌套_细览meta"></TRS_TEMPLATE>
+</head>
+
+<body>
+
+<div class="cssn_top">
+	<div class="cssn_main">
+		<a href="http://www.cssn.cn/" target="_blank">社科网首页</a>|<a href="http://bbs.cssn.cn/forum.php" target="_blank">论坛</a>|<a href="http://bbs.cssn.cn" target="_blank">人文社区</a>|<a href="http://www.cssn.cn/qt/ydkhd/" target="_blank">客户端</a>|<a href="http://e.t.qq.com/cssn-cn?preview" target="_blank">官方微博</a>|<a href="http://www.cssn.cn/qt/wytg/" target="_blank">报刊投稿</a>|<a href="http://www.cssn.cn/qt/lxwm/" target="_blank">邮箱</a> <a href="http://www.cssn.cn" target="_blank" class="cssn_link">中国社会科学网</a>
+	</div>
+</div>
+<div id="container">
+<div id="header">
+<div class="box_1">
+    	<div class="logo"><img src="../site92/p20121111154148610.png" width="340" height="96" alt="中国社会学网" /></div>
+        <div class="box_1_r">
+        	<div class="link"><img src="../site92/banner_link.jpg" width="630" height="29" border="0" usemap="#Map" /></div>
+            <div class="row">
+            	<div class="search">
+                	<input name="按钮2" id="按钮22" value="检索" onClick="toSearch()" type="image" src="../site92/search.gif" />
+
+                </div>
+                <div class="select">
+                	<select name="SearchType" id="SearchType">
+                      <option value="2">标题检索</option>
+                      <option value="4">全文检索</option>
+                    </select>
+                </div>
+                <div class="text"><input name="SearchKeyword" type="SearchKeyword" id="SearchKeyword" style="height:18px; width:188px; font-size:12px" /></div>
+		<script type="text/javascript">
+                    function toSearch() {
+                        var key = document.getElementById('SearchKeyword').value;
+                        var type = document.getElementById('SearchType').value;
+						var searchscope="";
+                       var keyV = "";   
+                      if(key.match(/[~!@#$%\^\+\*&\/\?\|{}()\'-;=\"]/g) != null){
+                      	keyV = "'" + key +"'";
+                      }else{
+						keyV=key;
+							 }
+						if(type=="2"){
+							searchscope = "DocTitle";
+						}else if(type=="4"){
+							searchscope = "";
+						}
+                        if (key.length == '') { alert('请输入关键词'); return; }
+                        window.open('http://sociology.cssn.cn/was5/web/search?channelid=231332&searchword=' + encodeURIComponent(keyV.replace(/[$]/g,"\\$")) + '&page=1&catetype=search&searchscope='+searchscope, '_blank');
+                    }
+</script>
+<script>
+	function test(){
+	document.getElementById("SearchKeyword").value=''+document.getElementById("textfield").value.replace(/@/g,'').replace(/!/g,'').replace(/$/g,'').replace(/#/g,'').replace(/%/g,'').replace(/^/g,'').replace(/|/g,'').replace(/&/g,'').replace(/</g,'').replace(/>/g,'');
+	debugger;
+			}
+</script>
+            </div>
+        </div>
+    </div> 
+     
+
+    <ul id="nav">
+	<li class="top" style="margin-left:3px;"><span><a href="/" class="top_link" target="_blank"><img src="../site92/nav_home.jpg" width="66" height="30" alt="首页" /></a></span></li>
+	<li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术沿革"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_xsyg.jpg" width="88" height="30" alt="学术沿革" /></a></span>
+	  <ul class="sub">
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学史"></TRS_CHANNEL>"  target="_blank">社会学史</a></li>
+			<li class="mid"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学前辈"></TRS_CHANNEL>"  target="_blank">社会学前辈</a></li>
+		</ul>
+	</li>
+	<li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="机构团体"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_jgtt.jpg" width="88" height="30" alt="机构团体" /></a></span>
+		<ul class="sub">
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="研究机构"></TRS_CHANNEL>" target="_blank">研究机构</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="专业委员会"></TRS_CHANNEL>" target="_blank">专业委员会</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="研究中心"></TRS_CHANNEL>" target="_blank">研究中心</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术团体"></TRS_CHANNEL>" target="_blank">学术团体</a></li>
+		</ul>
+	</li>
+    <li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术动态"></TRS_CHANNEL>"  class="top_link" target="_blank"><img src="../site92/nav_xsdt.jpg" width="88" height="30" alt="学术动态" /></a></span>
+		<ul class="sub">
+	    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术信息"></TRS_CHANNEL>" target="_blank">学术信息</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术评论"></TRS_CHANNEL>" target="_blank">学术评论</a></li>				
+	    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会关注"></TRS_CHANNEL>" target="_blank">社会关注</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术讨论"></TRS_CHANNEL>" target="_blank">学术讨论</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学会园地"></TRS_CHANNEL>" target="_blank">学会园地</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="会议论坛"></TRS_CHANNEL>" target="_blank">会议论坛</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="图片新闻"></TRS_CHANNEL>" target="_blank">图片新闻</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="解读·时评"></TRS_CHANNEL>" target="_blank">解读•时评</a></li>
+		</ul>
+	</li>
+    <li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学人"></TRS_CHANNEL>" target="_blank" class="top_link"><img src="../site92/nav_shxr.jpg" width="88" height="30" alt="社会学人" /></a></span>
+        <ul class="sub">
+	        <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="名家风采"></TRS_CHANNEL>" target="_blank">名家风采</a></li>
+		<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学者访谈"></TRS_CHANNEL>" target="_blank">学者访谈</a></li>
+		<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="个人主页_7902"></TRS_CHANNEL>" target="_blank">个人主页</a></li>
+		<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学者博客"></TRS_CHANNEL>" target="_blank">学者博客</a></li>
+    	</ul>
+	</li>
+	<li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术成果"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_xscg.jpg" width="88" height="30" alt="学术成果" /></a></span>
+		<ul class="sub">
+        	<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="最新文章"></TRS_CHANNEL>" target="_blank">最新文章</a></li>
+		<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学者书库"></TRS_CHANNEL>" target="_blank">学者书库</a></li>
+      		<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="专题研究"></TRS_CHANNEL>" class="fly" target="_blank">专题研究</a>
+		<ul class="zt">
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="总论"></TRS_CHANNEL>" target="_blank">社会学总论</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会理论_7687"></TRS_CHANNEL>" target="_blank">社会理论</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="研究方法_7688"></TRS_CHANNEL>" target="_blank">研究方法</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学史_7689"></TRS_CHANNEL>" target="_blank">社会学史</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会发展_7690"></TRS_CHANNEL>" target="_blank">社会发展</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="结构与分层_7691"></TRS_CHANNEL>" target="_blank">结构与分层</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会流动_7692"></TRS_CHANNEL>" target="_blank">社会流动</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会网络_7693"></TRS_CHANNEL>" target="_blank">社会网络</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="组织与群体_7694"></TRS_CHANNEL>" target="_blank">组织与群体</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会心理学_7695"></TRS_CHANNEL>" target="_blank">社会心理学</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="家庭与性别"></TRS_CHANNEL>" target="_blank">家庭与性别</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会工作"></TRS_CHANNEL>" target="_blank">社会工作</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社区建设_7698"></TRS_CHANNEL>" target="_blank">社区建设</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="青少年研究"></TRS_CHANNEL>" target="_blank">青少年研究</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会政策"></TRS_CHANNEL>" target="_blank">社会政策</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会问题_7701"></TRS_CHANNEL>" target="_blank">社会问题</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会建设"></TRS_CHANNEL>" target="_blank">社会建设</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会安全"></TRS_CHANNEL>" target="_blank">社会安全</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="乡村研究_7704"></TRS_CHANNEL>" target="_blank">乡村研究</a></li>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="人类学与民族学_7705"></TRS_CHANNEL>" target="_blank">人类学民族学</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="分支社会学_7708"></TRS_CHANNEL>" target="_blank">分支社会学</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="其它"></TRS_CHANNEL>" target="_blank">其它</a></li>
+		</ul>	
+          </li>
+          <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="书评读感"></TRS_CHANNEL>"  target="_blank">书评读感</a></li>
+		</ul>
+	</li>
+    <li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="综合学术资源"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_xszy.jpg" width="88" height="30" alt="学术资源" /></a></span>
+		<ul class="sub">
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学术期刊"></TRS_CHANNEL>" target="_blank">学术期刊</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="数据库"></TRS_CHANNEL>" class="fly" target="_blank">数据库</a>
+            	<ul>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="调查数据"></TRS_CHANNEL>" target="_blank">调查数据</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学文献数据库"></TRS_CHANNEL>" target="_blank">社会学文献数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="国情调研数据库"></TRS_CHANNEL>" target="_blank">国情调研数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="群体性事件数据库"></TRS_CHANNEL>" target="_blank">群体性事件数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学科机构知识库"></TRS_CHANNEL>" target="_blank">学科机构知识库</a></li>
+                </ul>
+            </li>
+	<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="特色资源"></TRS_CHANNEL>" class="fly" target="_blank">特色资源</a>
+            	<ul>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="网站电子杂志"></TRS_CHANNEL>" target="_blank">网站电子杂志</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社会学文献数据库"></TRS_CHANNEL>" target="_blank">社会学文献数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="国情调研数据库"></TRS_CHANNEL>" target="_blank">国情调研数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="群体性事件数据库"></TRS_CHANNEL>" target="_blank">群体性事件数据库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="学科机构知识库"></TRS_CHANNEL>" target="_blank">学科机构知识库</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="群学视频"></TRS_CHANNEL>" target="_blank">群学视频</a></li>
+                </ul>
+            </li>
+	<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="社科资源"></TRS_CHANNEL>" class="fly" target="_blank">社科资源</a>
+		<ul>
+		    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="院网资源"></TRS_CHANNEL>" target="_blank">院网资源</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="院馆资源"></TRS_CHANNEL>" target="_blank">院馆资源</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="院报资源"></TRS_CHANNEL>" target="_blank">院报资源</a></li>
+                    <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="院刊资源"></TRS_CHANNEL>" target="_blank">院刊资源</a></li>
+                </ul>
+                </li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="综合学术资源"></TRS_CHANNEL>" target="_blank">综合学术资源</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="国外期刊动态"></TRS_CHANNEL>" target="_blank">国外期刊动态</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="开放获取资源"></TRS_CHANNEL>" target="_blank">开放获取资源</a></li>
+            <li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="网站电子杂志"></TRS_CHANNEL>" target="_blank">网站电子杂志</a></li>
+		</ul>
+	</li>
+    <li class="top"><span class="down"><a href="http://shxjy.cssn.cn" target="_blank" class="top_link"><img src="../site92/nav_rcpy.jpg" width="88" height="30" alt="人才培养" /></a></span>
+        <ul class="sub">
+	    <li><a href="http://shxjy.cssn.cn" target="_blank">社会学教育</a></li>
+	    <li><a href="http://shxjy.cssn.cn" target="_blank">各地社会学系</a></li>
+	    <li><a href="http://shxbsh.cssn.cn" target="_blank">博士后流动站</a></li>
+	</ul>
+	</li>
+	<li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="方法工具"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_ffgj.jpg" width="88" height="30" alt="方法工具" /></a></span>
+		<ul class="sub">
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="研究方法_7769"></TRS_CHANNEL>" target="_blank">研究方法</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="研究工具"></TRS_CHANNEL>" target="_blank">研究工具</a></li>
+		</ul>
+	</li>
+    <li class="top"><span class="down"><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="读者交流"></TRS_CHANNEL>" class="top_link" target="_blank"><img src="../site92/nav_dzjl.jpg" width="88" height="30" alt="读者交流" /></a></span>
+		<ul class="sub">
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="征文投稿"></TRS_CHANNEL>" target="_blank">征文投稿</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="在线调查"></TRS_CHANNEL>" target="_blank">在线调查</a></li>
+			<li><a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="问卷调查"></TRS_CHANNEL>" target="_blank">问卷调查</a></li>
+		</ul>
+	</li>
+</ul>
+<map name="Map" id="Map">
+  <area shape="rect" coords="106,6,301,26" href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="所网站"></TRS_CHANNEL>" target="_blank" />
+  <area shape="rect" coords="396,5,466,28" href="http://e-sociology.cass.cn/wcm/shxsnw/shxs_indexs.jsp"  target="_blank"/>
+  <area shape="rect" coords="543,6,620,26" href="http://csen.cssn.cn/" target="_blank" />
+</map>
+<div id="middle">
+  	<div id="main">
+   	  <div class="sub_right_con" style="font-size:14px">
+        <div id="news_content">
+<p>欢迎进入中国社会状况综合调查（CSS）！5s后自动跳转，感谢您的访问！</p>
+</div>
+       <p>&nbsp;</p>
+       <p>&nbsp;</p> 
+       <p align="center">&nbsp;</p>
+      </div>
+    </div>  
+</div>
+<div id="footer">
+  		<div class="foot_bg">
+    		<a onclick="var strHref=window.location.href;this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.sociology2010.cass.cn/');">设为首页</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a onclick="window.external.addFavorite('http://www.sociology2010.cass.cn/','中国社会学网')" title="中国社会学网">加入收藏</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="征文投稿"></TRS_CHANNEL>" target="_blank">征文投稿</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a href="mailto:ios@cass.org.cn" target="_blank">联系我们</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="服务条款"></TRS_CHANNEL>" target="_blank">服务条款</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="版权声明"></TRS_CHANNEL>" target="_blank">版权声明</a><span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<a href="<TRS_CHANNEL URLISABS="true" FIELD="_RECURL" ID="网站地图"></TRS_CHANNEL>" target="_blank">网站地图</a>
+    	</div>
+  		<div class="copyright">
+    		版权所有： <a href="http://www.sociology.cass.cn/">中国社会科学院社会学研究所</a><br />E-mail: ios@cass.org.cn<br />欢迎转载，敬请注明：转载自中国社会学网
+    	</div>
+	</div>
+<div align="center">
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254842264'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/stat.php%3Fid%3D1254842264%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></div>
+<div style="display:none">
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://cl2.webterren.com/webdig.js?z=28' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">wd_paramtracker("_wdxid=000000000000000000000000000000000000000000")</script>
+</div>
+</div>
+</body>
+</html>

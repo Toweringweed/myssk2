@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+
+
+<div class="form-wrapper">
+        
+        
+    <form method="post" action="" enctype="multipart/form-data">
+        <table class="tab_apply">
+            {% csrf_token %}
+            <caption><font color="red"> 请注意，申请目的须不少于50字。<br>并请上传包含手写签名的数据使用协议书的扫描件</font>
+                <br><a href="http://css.cssn.cn/css_sy/zlysj/" target="_blank"> 数据使用协议书模板下载</a>
+            {% for field in form_apply %}
+
+            </caption>
+            <tr>
+                <td class="ll">{{ field.label_tag }}</td> 
+                <td>{{ field }}</td>
+            </tr>
+            {% endfor %}
+              
+        </table>
+        <div class="btn_1">
+        <input type="submit" value="提交" class="btn btn-info"/>
+        </div>
+
+	</form>
+</div>
+{{ uu }}
+
+{% endblock %}
+

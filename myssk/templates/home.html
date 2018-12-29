@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-md-12">
+  <div class="text-center">
+    <h1>Welcome To {{ site.name }}</h1>
+    <h3>Industrial Microbial Genome Database</h3>
+  </div>
+  <h3>IMGDB Mission</h3>
+  <div>
+    The mission of the Industrial Microbial Genomes Database (IMGDB) is to support the annotation, analysis and distribution of industrial microbial genome and metagenome datasets sequenced at TIB.
+
+    IMGDB is also open to scientists worldwide for the annotation, analysis, and distribution of their own genome and metagenome datasets, as long as they agree with the IMGDB data release policy and follow the metadata requirements for integrating data into IMGDB.
+  </div>
+
+  <h3>IMGDB Access & Users</h3>
+  <div>
+      IMGDB is committed to provide scientists worldwide free support for genome data annotation and open access comparative analysis of integrated genome. 
+
+      IMGDB users need to register to obtain a login and password for gaining access to IMGDB's data content and analysis tools. Logins/passwords allow users to (i) submit their own genomes and keep them "private" for up to two years while they review and revise annotations; (ii)employ IMGDB's curation tools; (iii)  download IMGDB genome and metagenome datasets. 
+  </div>
+  <h3>Data Distribution & Distribution Policy</h3>
+  <div>
+      Genome datasets submitted for annotation and/or integration in IMGDB will be kept "private" for up to two years from the date they become available for analysis, then they will become public: isolate genome datasets will be kept private for 18 months. 
+
+      For genome datasets with multiple submissions, only the latest version will be kept in IMGDB, with older versions automatically removed. 
+
+      Genome datasets submitted for annotation and/or integration in IMGDB are distributed solely through individual genome and data portals and are limited to assembled and annotated datasets; no other type of data distribution (data downloads) is provided. 
+
+      Microbial genomes sequenced at TIB become eligible for submission to Genbank when they become public in IMGDB. Genomes submitted by external users for annotation and comparative analysis in IMGDB are not submitted to Genbank by IMGDB. For such genomes Genbank submission is the responsibility of external users.
+  </div>
+
+  <h3>IMGDB Data Warehouse</h3>
+  <div>
+      IMGDB's Data Warehouse integrates genome and metagenome datasets sequenced at TIB or provided by IMGDB's users with a comprehensive set of publicly available bacterial, archaeal, eukaryotic, and phage genomes from Genbank, as well as engineered, environmental and host associated metagenome samples.
+  </div>
+</div>
+{% endblock content %}

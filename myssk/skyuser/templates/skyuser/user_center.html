@@ -1,0 +1,14 @@
+{% extends "base.html" %} 
+{% load i18n %} 
+{% block content %}
+
+<div class="mytxt">
+    <p>欢迎光临！</p>
+    <p>为了更好地使用本站资源，我们建议您阅读以下内容：</p>
+    <p>1. CSS数据是免费提供的，但在申请之前，我们必须了解您的真实身份，所以请务必<a href="{% url 'user_info' %}">填写您的真实资料</a>，任何虚假信息都有可能导致申请失败。</p>
+    <p>2. 在申请过程中，您需要先<a href="http://css.cssn.cn/css_sy/zlysj/" target="_blank">下载相应的《数据使用协议书》</a>，填写好后打印并签字，然后<a href="{% url 'data_apply' %}" target="_blank">在申请界面进行上传</a>。</p>
+    <p>3. 您提交申请后，CSS项目组的负责人会对您的申请进行审核，如果申请通过，您能够在<a href="{% url 'apply_list' %}">我的申请记录</a>下载相应的数据资料</p>
+</div>
+
+
+{% endblock %}

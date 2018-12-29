@@ -1,0 +1,167 @@
+<style type="text/css">
+	
+
+    #menu dt{float:left; padding:0; color:#aaa; line-height: 35px; font-weight: normal }
+    #menu li a{font-family:"微软雅黑" ; color: #F9F9F9; font-size:15px; font-weight:normal; line-height:35px; display:block; padding:0 13px}
+    #menu ul{position: absolute;visibility: hidden;list-style:none; margin: 0 0 0 3px; z-index:999;	padding: 0;	background:#082a57; width:190px}
+</style>
+
+       <div id="head">
+        <table width="100%" cellpadding="0" cellspacing="0" height="134">
+    	<tr>
+        	<td width="66%"></td>
+            <td width="34%" align="left" valign="top">
+            	<table cellpadding="0" cellspacing="0" style="margin:5px 10px 0 0" class="head_table">
+                	<tr>
+                    	
+                        <td height="31"><a href="http://sociology.cssn.cn/swz/">中国社科院社会学所</a></td>
+                    </tr>
+                    
+                   
+                         
+                </table>
+            	
+            </td>
+        </tr>
+    </table>
+    <div style="clear: both">
+    
+    <ul id="menu" >
+            
+         <dt style="width:10px"></dt>
+          <li><a href="http://css.cssn.cn/css_sy">首 页</a></li>
+          <dt>|</dt>
+         <li><a href="http://css.cssn.cn/css_sy/xmjs" onmouseover="mopen('m0')" onmouseout="mclosetime()">项目介绍</a>
+            <ul id="m0" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+             	<li><a href="http://css.cssn.cn/css_sy/xmjs">项目概况</a></li>
+                <li><a href="http://css.cssn.cn/css_sy/xmjs/tdjs/">团队介绍</a></li>
+                <li><a href="http://css.cssn.cn/css_sy/xmjs/hzjg/">合作机构</a></li>
+                <li><a href="http://css.cssn.cn/css_sy/xmjs/xmjs_lndcjs">历年调查介绍</a></li>
+            </ul>
+          </li>
+          <dt>|</dt>
+          <!-- <li><a href="http://css.cssn.cn/css_sy/xwydt/">新闻与动态</a>
+
+          </li> 
+          
+          <dt>|</dt> -->
+          <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/" onmouseover="mopen('m5')" onmouseout="mclosetime()">2017年调查实况</a>
+            <ul id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" >
+              <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/xsdd">全国调查动态图</a></li>
+                <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/xsdd2">巡视督导</a></li>
+              <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/dchxxd">调查花絮/心得</a></li>
+              <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/dcdqkjs">调查点情况介绍</a></li>
+              <!-- <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/fyhsfz">访员和受访者专区</a></li> -->
+            </ul>
+          </li>
+        
+                  
+          <dt>|</dt>
+          <li><a href="http://css.cssn.cn/css_sy/zlysj" onmouseover="mopen('m6')" onmouseout="mclosetime()">资料与数据下载</a>
+            <ul id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+              <li><a href="http://css.cssn.cn/css_sy/zlysj/dcfzzl">辅助资料</a></li>
+              <li><a href="http://css.cssn.cn/css_sy/zlysj/lndcwj">历年调查问卷</a></li>
+              <li><a href="http://css.cssn.cn/css_sy/zlysj/lnsj/">历年数据</a></li>
+              
+            </ul>
+          </li>
+          <dt>|</dt>
+
+          <li><a href="http://css.cssn.cn/css_sy/zlysj/fzshxsjjs/">发展社会学数据检索</a>
+            
+          </li>
+          <dt>|</dt>
+          <li><a href="http://css.cssn.cn/css_sy/lncgxz">成果展示</a>
+
+          </li>
+
+          <dt>|</dt>
+          <li>
+            <a href="http://106.14.218.36:8099/skyuser/user_center">数据申请</a>
+
+            </li>
+
+            <dt>|</dt>
+            <li>
+                <a href="http://106.14.218.36:8097/" target="_blank">数据使用交流区</a>
+
+            </li>
+
+            <dt>|</dt>
+          
+          <li><a href="http://css.cssn.cn/css_sy/ztlxwm/">联系我们</a></li>
+          
+          
+          </li>
+        </ul>
+		
+		<div class="small_box" style="height:0px"></div>
+    </div>
+        
+        
+<script type="text/javascript">
+<!--
+var timeout = 500;
+var closetimer= 0;
+var ddmenuitem = 0;
+// open hidden layer
+function mopen(id)
+{  
+  // cancel close timer
+  mcancelclosetime();
+
+  // close old layer
+  if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+  // get new layer and show it
+  ddmenuitem = document.getElementById(id);
+  ddmenuitem.style.visibility = 'visible';
+
+}
+// close showed layer
+function mclose()
+{
+  if(ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+}
+
+// go close timer
+function mclosetime()
+{
+  closetimer = window.setTimeout(mclose, timeout);
+}
+
+// cancel close timer
+function mcancelclosetime()
+{
+  if(closetimer)
+  {
+    window.clearTimeout(closetimer);
+    closetimer = null;
+  }
+}
+
+// close layer when click-out
+document.onclick = mclose; 
+// -->
+</script>
+        
+        
+        <script type="text/javascript" language="javascript">
+var nav = document.getElementById("menu");
+var links = nav.getElementsByTagName("li");
+var lilen = nav.getElementsByTagName("a");
+var currenturl = document.location.href;
+var last = 0;
+for (var i=0;i<links.length;i++)
+{
+var linkurl =  lilen[i].getAttribute("href");
+if(currenturl.indexOf(linkurl)!=-1)
+{
+last = i;
+}
+}
+links[last].className = "hh";
+</script> 
+  
+
+  </div>

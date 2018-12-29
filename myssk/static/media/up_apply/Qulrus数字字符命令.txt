@@ -1,0 +1,347 @@
+ID=311822252
+NAME=Commands
+AUTOCODEABLE=FALSE
+READONLY=FALSE
+{显示Qualrus的基本命令}
+
+{数值变量}
+number(i).
+i=100.3*2.4/3.23+0.2-5.3. {加减乘除运算符号+-*/}
+writeln("基本运算结果是：  "+i).
+i=int(i). {取整函数}
+writeln("取整运算结果是：  "+i).
+i=abs(i). {求绝对值函数}
+writeln("绝对值运算结果是：  "+i).
+i=Random(i). {0-i之间的随机数}
+writeln("随机数运算结果是：  "+i).
+i=RandomINT(i). {0-i之间的随机数}
+writeln("随机整数运算结果是：  "+i).
+i=log(i). {i的对数函数}
+writeln("对数函数运算结果是：  "+i).
+i=ln(i). {i的自然对数函数}
+writeln("自然对数函数运算结果是：  "+i).
+number(i).
+i=1.3.
+i=Ceiling(i).
+writeln("1.3的上限是："+i).
+i=1.3.
+i=Floor(i).
+writeln("1.3的下限是："+i).
+i=1.3.
+i=Roundup(i).
+writeln("1.3的小数进位是："+i).
+i=1.3.
+i=Sqrt(i).
+writeln("1.3的平方根是："+i).
+i=1.3.
+i=Exp(i).
+writeln("1.3的e幂是："+i).
+i=1.3.
+i=Trunc(i).
+writeln("1.3的截断函数是："+i).
+
+{三角函数}
+i=sin(i). {i的正弦函数}
+writeln("正弦函数运算结果是：  "+i).
+i=cos(i). {i的余弦函数}
+writeln("余弦函数运算结果是：  "+i).
+i=tan(i). {i的正切函数}
+writeln("正切函数运算结果是：  "+i).
+i=Arcsin(0.5). {i的反正弦函数}
+writeln("反正弦函数运算结果是：  "+i).
+i=Arccos(i). {i的反余弦函数}
+writeln("反余弦函数运算结果是：  "+i).
+i=Arctan(i). {i的反正切函数}
+writeln("反正切函数运算结果是：  "+i).
+
+Double(A). {A 是双字节数，注意此时A 不能用中文表示！}
+A=1232.3346212. {A 赋值}
+writeln("数值变量的原格式函数：  "+A).
+A=Format(A,12,2).{A的格式函数}
+writeln("数值变量的格式函数：  "+A).
+A=Sqrt(A). {A的平方根，似乎不工作}
+writeln("平方根运算结果是：  "+A).
+
+{布尔数,只有TRUE和FALSE两个值，和一种运算not}
+Boolean(完成).
+完成=TRUE.
+未完成=not(完成).
+writeln("未完成是"+未完成).{显示结果为“FALSE”}
+
+{字符和数字的转换函数}
+GetValueFromString("-936X92X1X13X213X", a). {把0-9的字符转换成数字}
+writeln(a).
+
+{列表函数调用}
+list(ArgsA). {定义第一个参数}
+list(ArgsB). {定义第二个参数}
+ArgsA.Clear. {清空第一个参数}
+ArgsA.AddString("isa"). {链接类型}
+ArgsA.AddString("区分"). {起点代码}
+ArgsA.AddString("超理论/主区分的区分"). {终点代码}
+Display(ArgsA).
+Script("Path_Call",ArgsA,ArgsB).
+Display(ArgsB).
+
+{控制结构}
+{条件语句: if-then-else-endif}
+幸运数=7.
+if (幸运数<5) then
+幸运数=幸运数+1 {第一选项}
+else
+幸运数=幸运数-1 {第二选项}
+endif.
+writeln("幸运数是"+幸运数).
+
+{固定循环语句：foreach-in-endfor}
+i=0.
+foreach aCode in Project.Codes
+  i=i+1
+endfor.
+writeln("项目中的代码总数是"+i).
+
+{条件循环：while-do-endwhile}
+i=0.
+while i<=Project.Codes.Count do 
+  i=i+1
+endwhile.
+writeln("项目中的代码总数是"+i).
+
+{list命令}
+Segment(aSegment).
+list aSegment from  Project to searchresults where  aSegment.HasAnyCodes("主区分") 
+endlist.
+
+{显示命令}
+writeln("输出结果是："+aSegment ).
+{writeln(Project.Codes).
+List Project.Codes.
+display(Project.Codes).
+DisplayHierarchy(Project.Codes).
+DisplayLists(Project.Codes).
+DisplayPaths(Project.Codes).
+displaytree(Project.Codes).}
+
+i=date().
+writeln("日期"+i).
+
+
+writeln("**************** 完成于"+Currenttime()+" ****************").
+writeln(CurrentDate()).
+TSCRIPTO}
+{TSCRIPTO
+ID=311821710
+NAME=Strings
+AUTOCODEABLE=FALSE
+READONLY=FALSE
+{显示字符串的属性和方法}
+
+
+{字符大写和小写转换}
+aString=" this is a lowercase".
+UpperCase(aString).
+writeln("aString："+aString).
+Lowercase(aString).
+writeln("aString："+aString).
+
+{删除字符前面的空格}
+aString=Trim(aString).
+writeln("aString："+aString).
+
+{字符定义，由双引号界定}
+string(aString).
+StringList(dString).
+bString="风声、雨声、声声入耳".
+writeln("aString："+aString).
+writeln("bString："+bString).
+
+{字符合并运算，+}
+cString=aString+bString.
+writeln("cString："+cString).
+
+{字符拷贝}
+i=3.
+j="Aadfsfedtre".
+k=2.
+l="1234567890".
+l=CopyString(j,i,k). {从源头j字符的第i个位置开始拷贝k个字符，赋值给l}
+writeln("拷贝结果是："+l).
+
+{字符替换}
+dString=StringReplace(cString,"风","雷").
+writeln("dString："+dString). 
+
+{字符分割}
+aString="风声、雨声、声声入耳".
+Split(aString, "、", aList).{Split("字符串"或字符变量, "分隔符", 结果列表)}
+display(aList). 
+writeln().
+
+{字符串长度}
+i=Length(dString). {Length("字符串"或字符变量)}
+writeln("dString共有"+i+"个字符。").
+
+{字符计数}
+i=SubstringCount("声",dString).{SubstringCount("字符串","字符串"或字符变量)}
+writeln("dString共有"+i+"个声字。").
+SubStringPositions(dString,"声", j).       
+writeln("它们位于"+j+"个字符上。").
+
+{字符位置及其指针}
+i=Position("声",dString). {Position("字符","字符串"或字符变量)}
+j=IndexedPosition("声",dString,1). {IndexedPosition("字符","字符串"或字符变量,i)}
+k=IndexedPosition("声",dString,4). {其中第三个参数表示计算第i个出现的字符的位置指针}
+display("i="+i+", j="+j+", k="+k). {注意一个中文字符占据两个位置，即双字节}
+
+{字符串查询函数，是否存在某个字符}
+i=IsSubstring("声",dString)。
+writeln(i).
+
+{字符和数字的转换函数}
+GetValueFromString("-936X92X1X13X213X", a). {把0-9的字符转换成数字}
+writeln(a).
+
+writeln().
+writeln("**************** 完成于"+Currenttime()+" ****************").
+writeln("西历"+CurrentDate()).
+TSCRIPTO}
+{TSCRIPTO
+ID=311823539
+NAME=Lists
+AUTOCODEABLE=FALSE
+READONLY=FALSE
+{列表属性及其方法}
+{因存储的元素类型不同，可分为字符串列表和对象列表}
+
+{界定列表}
+list(aList).
+list(bList).
+list(cList).
+list(dList).
+list(eList).
+
+{列表清空}
+aList.Clear.
+
+{列表属性，需要zList在项目中存在}
+If Project.GetList("zList",aList) then
+ writeln("找到列表！")
+ writeln("列表的元素共有："+aList.Count)
+ writeln("列表的文本是："+aList.Text)
+ writeln("列表的便签是："+aList.Memo)
+   else
+     writeln("找不到表列！")
+endif.
+aList.Clear.
+
+{增加一个字符串}
+aList.Add("第一个元素"). {这是一个字符串列表}
+aString="第四个元素".
+aList.Add(aString, aObject).
+aList.AddObject(aObject). {第三个元素是一个对象}
+aList.AddString("第二个元素").
+writeln("列表的元素有："+aList.Count).
+writeln("分别是："+aList).
+
+{删除元素}
+aList.Delete(3).  {删除第3个元素}
+writeln("删除后的列表元素有："+aList.Count).
+writeln("分别是："+aList).
+aList.AsList.  {没有显示}
+
+{元素排序}
+aList.Sort.
+writeln("排序后的元素分别是："+aList). {注意，中文是按照拼音排序的}
+
+{拷贝一个现存列表，例如，项目中的所有代码}
+bList.CopyFrom(Project.Codes). {这是一个对象列表}
+
+{拷贝一个对象元素}
+bList.GetObject(1, aObject).
+bList.GetObject(2, bObject). 
+cList.AddObject(aObject).
+cList.AddObject(bObject).
+bList.GetObject(3, cObject). 
+cList.InsertObject(3, cObject, cObject). {插入一个对象}
+
+{以列表形式显示}
+writeln("以列表形式显示：").
+DisplayLists(cList).
+
+{拷贝一个字符串元素}
+aList.GetString(1, aString).
+aList.GetString(3, bString). 
+dList.AddString(aString).
+dList.AddString(bString).
+writeln("字符列表元素是："+dList).
+
+{字符串插入}
+aList.GetString(2, cString). 
+dList.InsertString(2, cString). {插入一个字符}
+writeln("在第二位置上插入字符后的列表元素是："+dList).
+
+{字符串更改}
+dList.PutString(1,"第一个元素"). {更改第1个字符串}
+dList.PutString(2,"第二个元素").
+dList.PutString(3,"第三个元素").
+writeln("更改后的列表元素是："+dList).
+
+{元素判定}
+if dList.Member("第一个元素") then  {列表中是否存在字符串？}
+   dList.Member("第一个元素", i)    {把字符串在列表中的位置赋值给i}
+   writeln("第一个元素的位置是："+i)
+endif.
+
+{两个列表之间的逻辑运算}
+aList.And(dList,eList). {aList和dList的并集，结果存储在eLIst中}
+writeln("两个列表交集是："+eList).
+if aList.Intersects(dList) then 
+   writeln("两个列表有交集")
+  else
+   writeln("两个列表无交集")
+endif.
+
+Segment(aSegment).
+list(fList).
+list aSegment from  Project to fList where  aSegment.HasAnyCodes("主区分") 
+endlist.   { 当段落有代码“主区分”时，从Project把aSegment 添加到列表fList 变量中}
+writeln("段落元素数是："+fList.Count).
+
+{把所有的代码对象存储在一个文件上}
+bList.SaveToFile("Lumann_Codes_Saved").
+{再赋值给aList}
+aList.LoadFromFile("Lumann_Codes_Saved").
+
+writeln("**************** 完成于"+Currenttime()+" ****************").
+writeln(CurrentDate()).
+TSCRIPTO}
+{TSCRIPTO
+ID=287728665
+NAME=Dictionary_Maker
+AUTOCODEABLE=FALSE
+READONLY=FALSE
+{从源文件中生成词典，原词文件过大，会造成内存错误}
+{原词文件用UE删除单字符、数字、非ANSI字符等}
+
+list(aLines).
+list(nWords).
+
+inFile="D:\Sources\dic.txt". 
+outFile="deutschwort.txt".
+aLines.LoadFromFile(inFile). 
+writeln("原词共有"+aLines.Count).
+
+forEach aWord in aLines 
+    if Not(nWords.Member(aWord)) then 
+         nWords.AddString(aWord)
+   endif
+endfor.
+
+writeln("词典共有"+nWords.Count).
+nWords.sort.
+nWords.SaveToFile(outFile).
+
+writeln("**************** 完成于"+Currenttime()+" ****************").
+writeln(CurrentDate()).
+TSCRIPTO}
+TSCRIPTSLISTO}

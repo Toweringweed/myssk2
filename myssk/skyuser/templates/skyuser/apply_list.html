@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="form-wrapper">
+
+    
+    <table class="tab_apply_list">
+        
+        <th>数据名称</th><th>申请目的</th><th>申请日期</th><th>申请结果</th><th></th><th></th>
+        {% for f in apply_queryset %}
+            <tr>
+                <td>{{ f.data_year__data_year }}</td>
+                <td>{{ f.goal }}</td>
+                <td>{{ f.apply_date }}</td>
+                <td>{{ f.result }} </td>
+                <td><a href="/skyuser/apply_edit/{{ f.id }}">编辑</a></td>
+                <td><a href="/skyuser/apply_del/{{ f.id }}">删除</a></td>
+            </tr>
+    
+           {% if f.result == '审核通过' %}
+           <tr>
+            <td colspan="6"><a href="/media/{{f.data_year__data_file1}}">{{ f.data_year__data_file1 }}</a></td>
+           </tr>
+            <tr>
+                <td colspan="6"><a href="/media/{{f.data_year__data_file2}}">{{ f.data_year__data_file2 }}</a></td>
+            </tr>
+            <tr>
+                <td colspan="6"><a href="/media/{{f.data_year__data_file3}}">{{ f.data_year__data_file3 }}</a></td>
+            </tr>
+
+            {% endif %}
+            {% if f.result == '审核未通过' %}
+                <tr><td colspan="6"><font color="red"> 审核未通过原因：{{ f.result_why }}</font></td>
+                </tr>
+                {% if f.why_des != '无' %}
+                    <tr><td colspan="6"><font color="red"> {{ f.why_des }}</font></td></tr>
+                {% endif %}
+            {% endif %}
+        {% endfor %}    
+    </table>
+    
+
+</div>
+{% endblock %}
+

@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+{% load i18n %} 
+{% block content %}
+
+
+
+<form method="post" , action="">
+    {% csrf_token %}
+    <table class="tab_apply" cellspacing="1" align="center">
+        {% for field in form_user %}
+        <tr>
+            <td class="ll"> {{ field.label_tag}}</td>
+            <td>{{field}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="btn_1">
+    <input type="submit" value="提交" class="btn btn_my2">
+    </div>
+</form>
+
+
+
+{% endblock %}

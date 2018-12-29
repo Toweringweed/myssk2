@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="中国社会状况综合调查, Chinese Social Survey, CSS" />
+<meta name="description" content="中国社会状况综合调查（Chinese Social Survey，简称CSS）是中国社会科学院社会学研究所于2005年发起的一项全国范围内的大型连续性抽样调查项目，目的是通过对全国公众的劳动就业、家庭及社会生活、社会态度等方面的长期纵贯调查，来获取转型时期中国社会变迁的数据资料，从而为社会科学研究和政府决策提供翔实而科学的基础信息。" />
+<title><TRS_CHANNEL id="OWNER"  field="CHNLDESC"     autolink="FALSE"     ></TRS_CHANNEL>-中国社会学网</title>
+<link rel="stylesheet" type="text/css" href="P020170616097745193393.css" OLDSRC="P020170616097745193393.css" OLDID="21940" RELATED="1" />
+<script language="javascript" type="text/javascript">
+var  $c=function(array){var nArray = [];for (var i=0;i<array.length;i++) nArray.push(array[i]);return nArray;};
+Array.prototype.each=function(func){
+for(var i=0,l=this.length;i<l;i++) {func(this[i],i);};
+};
+document .getElementsByClassName=function(cn){
+var hasClass=function(w,Name){
+var hasClass = false;
+w.className.split(' ').each(function(s){
+if (s == Name) hasClass = true;
+});
+return hasClass;
+}; 
+var elems =document.getElementsByTagName("*")||document.all;
+            var elemList = [];
+           $c(elems).each(function(e){
+if(hasClass(e,cn)){elemList.push(e);}
+		   })
+        return $c(elemList);
+};		
+function change_bg(obj){
+var a=document.getElementsByClassName("menu")[0].getElementsByTagName("a");
+for(var i=0;i<a.length;i++){a[i].className="";}
+obj.className="hh";
+}
+</script>
+<TRS_TEMPLATE TEMPNAME="嵌套_概览meta"></TRS_TEMPLATE>
+</head>
+
+<body>
+
+<style type="text/css">
+.sub_list li span {font-size:13px;}
+</style>
+
+<TRS_TEMPLATE TEMPNAME="css_嵌套_社科头部"></TRS_TEMPLATE>
+<div id="container">
+  <TRS_TEMPLATE TEMPNAME="css_嵌套_头部"></TRS_TEMPLATE>        
+    <div id="middle" >
+   
+    
+ 		<h2 style="font-family:"微软雅黑""><TRS_CHANNEL FIELD="CHNLDESC" AUTOLINK="FALSE" ID="OWNER"></TRS_CHANNEL></h2>    
+        
+       <ul class="sub_list" style="min-height: 300px">
+       <TRS_DOCUMENTS ID="OWNER" pagesize="25" enablelimit="FALSE">    
+                        <li><TRS_DOCUMENT FIELD="DOCTITLE" TARGET="_blank" AUTOLINK="TRUE"></TRS_DOCUMENT>&nbsp;<span><i><TRS_DOCUMENT FIELD="DOCRELTIME" AUTOLINK="false" DATEFORMAT="yyyy-MM-dd"></TRS_DOCUMENT></i></span></li>
+        </TRS_DOCUMENTS>
+       </ul>
+              <div class="pagestyle">  <TRS_TEMPLATE TEMPNAME="嵌套_分页"></TRS_TEMPLATE></div>               
+       <div class="small_box"></div>       
+    
+    </div>
+     
+          
+</div>
+<TRS_TEMPLATE TEMPNAME="css_嵌套_底部"></TRS_TEMPLATE>
+</body>
+</html>

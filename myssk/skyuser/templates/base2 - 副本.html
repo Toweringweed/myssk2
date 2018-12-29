@@ -1,0 +1,350 @@
+{% load i18n staticfiles %}<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}用户中心-中国社会综合状况调查{% endblock %} - {{ site_name }}</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="{% block keywords %}{% endblock %}">
+	<meta name="description" content="{% block description %}{% endblock %}">
+
+	<meta name="author" content="{% block author %}WeizhongTu{% endblock %}">
+
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="{% static 'js/echarts.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/china.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/city.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+
+    {% block extra_css %}{% endblock %}
+    {% block basejs %}
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    {% endblock basejs %}
+    {% block extra_js %}{% endblock %}
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+	  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  <link rel="stylesheet" type="text/css" href="http://css.cssn.cn/images/P020170616097745193393.css" OLDSRC="P020170616097745193393.css"
+        OLDID="21940" RELATED="1" />
+    <script language="javascript" type="text/javascript">
+        var $c = function (array) { var nArray = []; for (var i = 0; i < array.length; i++) nArray.push(array[i]); return nArray; };
+        Array.prototype.each = function (func) {
+            for (var i = 0, l = this.length; i < l; i++) { func(this[i], i); };
+        };
+        document.getElementsByClassName = function (cn) {
+            var hasClass = function (w, Name) {
+                var hasClass = false;
+                w.className.split(' ').each(function (s) {
+                    if (s == Name) hasClass = true;
+                });
+                return hasClass;
+            };
+            var elems = document.getElementsByTagName("*") || document.all;
+            var elemList = [];
+            $c(elems).each(function (e) {
+                if (hasClass(e, cn)) { elemList.push(e); }
+            })
+            return $c(elemList);
+        };
+        function change_bg(obj) {
+            var a = document.getElementsByClassName("menu")[0].getElementsByTagName("a");
+            for (var i = 0; i < a.length; i++) { a[i].className = ""; }
+            obj.className = "hh";
+        }
+    </script>
+
+
+
+    <style type="text/css">
+        
+        
+        #menu dt{float:left; padding:0; color:#aaa; line-height: 35px; font-weight: normal }
+        #menu li a{font-family:"微软雅黑" ; color: #F9F9F9; font-size:15px; font-weight:normal; line-height:35px; display:block; padding:0 13px}
+        #menu ul{position: absolute;visibility: hidden;list-style:none; margin: 0 0 0 3px; z-index:999;	padding: 0;	background:#082a57; width:190px}
+
+        .main{ margin-left:300px; width: auto }
+
+        .left_user {
+            width: 220px;
+            border: 1px solid #ccc;
+            font-family: "微软雅黑";
+            float: left;
+            
+            
+            
+        }
+        .left_user ul{
+            font-size: 14px;
+            list-style: none;
+            margin: 0;
+            padding: 0 1px 5px 1px
+                        
+        }
+        .left_user ul dd{font-size: 14px; font-weight: bold; color:#F9F9F9; background: #5686da; margin: 0 0 5px 0; padding: 6px 0; text-align: center}
+        .left_user ul li{font-size: 14px; padding: 5px 0 5px 10px}
+        .user_top{list-style: none; margin: 0 15px 5px 10px; width: 700px; text-align: right}
+        .user_top li {float: right; margin-right: 15px}
+        .tab_apply{margin:15px 0; width: 80%;}
+        
+        .tab_apply td{ font-size: 14px; padding:5px; }
+        .tab_apply select{ font-size: 14px; }
+        .tab_apply input{background: #faf8f8; border: 1px solid #95979b; width: 240px; height: 30px; }
+        .ll{width: 35%; text-align: right}
+
+        .btn_1{text-align: center}
+        .btn_my1{background: #fab254; color: #fff}
+
+        .btn_my2{background: #3079e7; color: #fff}
+        .tab_apply_list{margin:15px 0; width: 98%; font-size: 14px; }
+        .tab_apply_list td{ padding:5px; border: 1px solid #ddd}
+        .tab_apply_list th{ padding: 5px; background: #ccc; border: 1px solid #ddd}
+        .mytxt{font-size: 14px}
+        .mytxt a{font-size: 14px}
+        .form-wrapper{width: 90%; font-size: 14px; margin-top:25px}
+        .form-wrapper label{width:150px; text-align: right; font-weight: normal; margin: 10px 0}
+        .button-wrapper{text-align: center; width: 80%; margin-bottom: 20px}
+        .help_text{display: inline; color: #999}
+        .form-wrapper p{text-align: center}
+
+
+        
+
+          
+    </style>
+
+  {% block css %}{% endblock %}
+  {% block js %}{% endblock %}
+</head>
+
+<body>
+{% block allcontent %}
+
+<div class="cssn_top">
+    <div class="cssn_main">
+        <a href="http://www.cssn.cn/" target="_blank">社科网首页</a>|
+        <a href="http://bbs.cssn.cn/forum.php" target="_blank">论坛</a>|
+        <a href="http://bbs.cssn.cn" target="_blank">人文社区</a>|
+        <a href="http://www.cssn.cn/qt/ydkhd/" target="_blank">客户端</a>|
+        <a href="http://e.t.qq.com/cssn-cn?preview" target="_blank">官方微博</a>|
+        <a href="http://www.cssn.cn/qt/wytg/" target="_blank">报刊投稿</a>|
+        <a href="http://www.cssn.cn/qt/lxwm/" target="_blank">邮箱</a>
+        <a href="http://www.cssn.cn" target="_blank" class="cssn_link">中国社会科学网</a>
+    </div>
+</div>
+<div id="container">
+    <div id="head">
+        <table width="100%" cellpadding="0" cellspacing="0" height="134">
+            <tr>
+                <td width="66%"></td>
+                <td width="34%" align="left" valign="top">
+                    <table cellpadding="0" cellspacing="0" style="margin:5px 10px 0 0" class="head_table">
+                        <tr>
+
+                            <td height="31">
+                                <a href="http://sociology.cssn.cn/swz/">中国社科院社会学所</a>
+                            </td>
+                        </tr>
+
+
+
+                    </table>
+
+                </td>
+            </tr>
+        </table>
+        <div style="clear: both">
+
+            <ul id="menu" >
+                
+             <dt style="width:10px"></dt>
+              <li><a href="http://css.cssn.cn/css_sy">首 页</a></li>
+              <dt>|</dt>
+             <li><a href="http://css.cssn.cn/css_sy/xmjs" onmouseover="mopen('m0')" onmouseout="mclosetime()">项目介绍</a>
+                <ul id="m0" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                     <li><a href="http://css.cssn.cn/css_sy/xmjs">项目概况</a></li>
+                    <li><a href="http://css.cssn.cn/css_sy/xmjs/tdjs/">团队介绍</a></li>
+                    <li><a href="http://css.cssn.cn/css_sy/xmjs/hzjg/">合作机构</a></li>
+                    <li><a href="http://css.cssn.cn/css_sy/xmjs/xmjs_lndcjs">历年调查介绍</a></li>
+                </ul>
+              </li>
+              <dt>|</dt>
+              <!-- <li><a href="http://css.cssn.cn/css_sy/xwydt/">新闻与动态</a>
+    
+              </li> 
+              
+              <dt>|</dt> -->
+              <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/" onmouseover="mopen('m5')" onmouseout="mclosetime()">2017年调查实况</a>
+                <ul id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()" >
+                  <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/xsdd">全国调查动态图</a></li>
+                    <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/xsdd2">巡视督导</a></li>
+                  <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/dchxxd">调查花絮/心得</a></li>
+                  <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/dcdqkjs">调查点情况介绍</a></li>
+                  <!-- <li><a href="http://css.cssn.cn/css_sy/dcsk_2017/fyhsfz">访员和受访者专区</a></li> -->
+                </ul>
+              </li>
+            
+                      
+              <dt>|</dt>
+             
+    
+              <li><a href="http://css.cssn.cn/css_sy/fzshxsjzy/">发展社会学数据检索</a>
+                
+              </li>
+              <dt>|</dt>
+              <li><a href="http://css.cssn.cn/css_sy/lncgxz">成果展示</a>
+    
+              </li>
+    
+              <dt>|</dt>
+              <li><a href="http://css.cssn.cn/css_sy/zlysj" onmouseover="mopen('m6')" onmouseout="mclosetime()">资料与数据申请协议</a>
+                <ul id="m6" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+                  <li><a href="http://css.cssn.cn/css_sy/zlysj/dcfzzl">辅助资料</a></li>
+                  <li><a href="http://css.cssn.cn/css_sy/zlysj/lndcwj">历年调查问卷</a></li>
+                  <li><a href="http://css.cssn.cn/css_sy/zlysj/lnsj/">历年数据</a></li>
+                  <li><a href="http://47.97.196.79:8099/skyuser/user_map">数据申请者统计</a></li>
+                  
+                </ul>
+              </li>
+              <dt>|</dt>
+              <li>
+                <a href="http://47.97.196.79:8099/skyuser/user_center">数据申请</a>
+    
+                </li>
+    
+                <dt>|</dt>
+                <li>
+                    <a href="http://47.97.196.79:8097/" target="_blank">交流区</a>
+    
+                </li>
+    
+                <dt>|</dt>
+              
+              <li><a href="http://css.cssn.cn/css_sy/ztlxwm/">联系我们</a></li>
+              
+              
+              </li>
+            </ul>
+            
+            <div class="small_box" style="height:0px"></div>
+        </div>
+
+            <div class="small_box" style="height:0px"></div>
+        </div>
+
+
+        <script type="text/javascript">
+
+            var timeout = 500;
+            var closetimer = 0;
+            var ddmenuitem = 0;
+            // open hidden layer
+            function mopen(id) {
+                // cancel close timer
+                mcancelclosetime();
+
+                // close old layer
+                if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+
+                // get new layer and show it
+                ddmenuitem = document.getElementById(id);
+                ddmenuitem.style.visibility = 'visible';
+
+            }
+            // close showed layer
+            function mclose() {
+                if (ddmenuitem) ddmenuitem.style.visibility = 'hidden';
+            }
+
+            // go close timer
+            function mclosetime() {
+                closetimer = window.setTimeout(mclose, timeout);
+            }
+
+            // cancel close timer
+            function mcancelclosetime() {
+                if (closetimer) {
+                    window.clearTimeout(closetimer);
+                    closetimer = null;
+                }
+            }
+
+            // close layer when click-out
+            document.onclick = mclose;
+
+        </script>
+
+
+        <script type="text/javascript" language="javascript">
+            var nav = document.getElementById("menu");
+            var links = nav.getElementsByTagName("li");
+            var lilen = nav.getElementsByTagName("a");
+            var currenturl = document.location.href;
+            var last = 0;
+            for (var i = 0; i < links.length; i++) {
+                var linkurl = lilen[i].getAttribute("href");
+                if (currenturl.indexOf(linkurl) != -1) {
+                    last = i;
+                }
+            }
+            links[last].className = "hh";
+        </script>
+
+
+    </div>
+
+    <div id="middle">
+        
+   
+
+           
+                {% block content %}
+                    
+                    
+                
+
+                {% endblock %}
+                
+
+      
+
+
+    </div>
+    
+    <div class="small_box"></div>
+
+
+</div>
+{% endblock allcontent %}
+
+
+{% block bootstrapjs %}
+<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{% endblock bootstrapjs %}
+
+<script>
+$(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+<div style="visibility: hidden;display:none" hidden>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1627523662d16280b1d8bcc8e12bd3c9";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+{% block jsbottom %}{% endblock jsbottom %}
+{% block bottomjs %}{% endblock bottomjs %}
+</div>
+</body>
+</html>

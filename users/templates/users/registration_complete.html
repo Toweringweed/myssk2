@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block apply_button %}
+{% endblock %}
+{% block content %}
+<p>{% trans "注册完成." %}</p>
+
+<div style=" width:90%; text-align:center">
+<a href="{% url 'user_center' %}" class="btn btn-info">进入个人中心</a>
+</div>
+
+{% endblock %}
